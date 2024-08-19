@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Settings</title>
+</head>
+<body>
+	<form>
+		<h1>Hide by english title on MangaDex</h1>
+		<label for="hidden-manga">Hide releases with these english titles:</label><br/>
+		<textarea id="hidden-manga" placeholder="Insert manga names here, and then the ID. One per line." rows="5" cols="50"
+				  style="min-width: 20%; max-width: 100%"></textarea>
+		<br/>
+        <lable>Note that all entries are Title,Manga Id. However, only the Manga Id is actually used by the extension. But unless you have a great memory what even is "10a4985d-0713-462e-a9d6-767bf91e4fd7"?</lable>
+        <br>
+        <br>
+		<h1>Hide by manga id on MangaDex</h1>
+		<label for="hidden-uploaders">Hide releases with these IDs:</label><br/>
+		<textarea id="hidden-uploaders" placeholder="Insert manga genres here. One genre per line, lowercase only." rows="5" cols="50"
+				  style="min-width: 20%; max-width: 100%"></textarea>
+		<br/><br/>
+		<lable>https://wordcounter.net/alphabetize
+		</lable>
+		<button type="submit">Save</button>
+	</form>
+	<script src="options.js"></script>
+</body>
+</html>
